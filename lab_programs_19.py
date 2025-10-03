@@ -1,0 +1,6 @@
+f=open("Source.txt",'r')
+content=f.read()
+print("---------Content in Reverse order----------")
+content=(content[::-1])
+print(content)
+f.close()

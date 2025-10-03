@@ -1,0 +1,16 @@
+#f=open("Source.txt",'w')
+#f.write("This is first line")
+#f.close()
+#f1=open("Destination.txt",'w')
+#f1.write("")
+#f1.close()
+
+f=open("Source.txt",'r')
+content=f.read()
+words=content.split()
+words=[w.lower() for w in words]
+words.sort()
+f1=open("Destination.txt",'w')
+f1.write(" ".join(words))
+f.close()
+f1.close()
